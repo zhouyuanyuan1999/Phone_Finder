@@ -24,10 +24,10 @@ python train_phone_finder.py --data_dir ../find_phone/ --resume
 Here is the list of command how the provided model (in experiments folder) is generated:
 ```
 python train_phone_finder.py --data_dir ../find_phone/ --gpu 1 --rotation --pretrained --freezed_layers 60 --epochs 100 --model_dir ./experiments
-python train_phone_finder.py --data_dir ../find_phone/ --gpu 1 --rotation --pretrained --freezed_layers 3 --epochs 300 -- model_dir ./experiments
+python train_phone_finder.py --data_dir ../find_phone/ --gpu 1 --rotation --pretrained --freezed_layers 3 --epochs 200 -- model_dir ./experiments --resume
 ```
 Notice: --rotation flag make the images randomly rotate while training. Also the code will automatically split the dataset in 90%/10% train/validation split.
-Notice: After running the above commands, the validation accuracy should be 100%, and train accuracy should be around 75-80%, however, without random rotation and translation, the accuracy on train dataset should be around 98%.
+Notice: After running the above commands, the validation accuracy should be 100%, and train accuracy should be around 75-80%, however, without random rotation and translation, the accuracy on train dataset should be around 99%.
 Notice: The default model is resnet18. 
 Notice: During training, the validation accuracy will fluctuate. However, it is expected since the validation dataset has only around 10 images. 
 
