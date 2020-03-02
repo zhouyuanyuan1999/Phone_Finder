@@ -1,14 +1,11 @@
 # Phone Finder
 
 ## Requirement
-Python is installed.
-Following packages are installed:
-    pandas
-    numpy
-    matplotlib
-    scikit-learn
-    pytorch
-    torchvision
+Python is installed. 
+
+Following packages are installed:pandas, numpy, matplotlib, scikit-learn, pytorch, torchvision.
+
+It is highly recommended that you use use high power gpu, such as nvidia Titan XP to train the model, otherwise, it will be slow.
 
 ## How to Train
     
@@ -44,7 +41,7 @@ To predict multiple images (given all images are store in one directory):
 ```
 python find_phone.py ../find_phone/
 ```
-Notice: It is recommanded that you use the second command if you have multiple images, since with second command, you only need to load the model once which can save you some time. 
+Notice: It is recommended that you use the second command if you have multiple images, since with second command, you only need to load the model once which can save you some time. 
 
 ## Source
 
